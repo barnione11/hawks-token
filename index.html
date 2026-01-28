@@ -1,35 +1,168 @@
-l">1,000,000,000 $HAWKS</span></div>
-<div class="card"><strong>Tax</strong><br><span class="pill">0%</span></div>
-<div class="card"><strong>Liquidity</strong><br><span class="pill">Locked / Burned</span></div>
-<div class="card"><strong>Mint</strong><br><span class="pill">Disabled</span></div>
-</div>
-</section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>$HAWKS – Meme War Starts Here</title>
+  <meta name="description" content="$HAWKS is a community-driven football meme token. Choose your side. Join the chaos." />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #05080d;
+      --panel: #0b1220;
+      --hawk: #2db4ff;
+      --danger: #ff3b3b;
+      --text: #e6edf3;
+      --muted: #9aa4b2;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Orbitron', system-ui, sans-serif;
+      background: radial-gradient(1200px 600px at 50% -10%, #0f1b3a, transparent), var(--bg);
+      color: var(--text);
+    }
+    a { color: inherit; text-decoration: none; }
+    .wrap { max-width: 1100px; margin: 0 auto; padding: 24px; }
 
+    header {
+      display: flex; justify-content: space-between; align-items: center;
+    }
+    .logo { font-weight: 800; letter-spacing: 2px; }
+    .nav a { margin-left: 16px; color: var(--muted); font-size: 14px; }
 
-<section id="roadmap" class="section">
-<h2>Roadmap</h2>
-<div class="grid">
-<div class="card"><strong>Phase 1</strong><p>Website · X · Telegram · Meme drop</p></div>
-<div class="card"><strong>Phase 2</strong><p>Community events · Polls · Rivalry wars</p></div>
-<div class="card"><strong>Phase 3</strong><p>Game‑day chaos · Surprises · More memes</p></div>
-</div>
-</section>
+    .hero {
+      text-align: center;
+      margin-top: 80px;
+    }
+    .hero h1 {
+      font-size: clamp(48px, 8vw, 96px);
+      margin: 0;
+      color: var(--hawk);
+      text-shadow: 0 0 40px rgba(45,180,255,.35);
+    }
+    .hero p {
+      max-width: 720px;
+      margin: 24px auto;
+      color: var(--muted);
+      font-size: 18px;
+    }
+    .cta {
+      display: flex; justify-content: center; gap: 16px; flex-wrap: wrap;
+    }
+    .btn {
+      padding: 14px 28px;
+      border-radius: 999px;
+      font-weight: 700;
+      border: 1px solid rgba(255,255,255,.15);
+      background: transparent;
+      cursor: pointer;
+    }
+    .btn.primary {
+      background: linear-gradient(135deg, var(--hawk), #7fd3ff);
+      color: #020617;
+      border: none;
+    }
 
+    .divider {
+      margin: 96px 0 48px;
+      height: 1px;
+      background: linear-gradient(to right, transparent, rgba(255,255,255,.2), transparent);
+    }
 
-<section id="community" class="section">
-<h2>Community</h2>
-<div class="grid">
-<a class="card" href="#" target="_blank">🐦 X (Twitter)</a>
-<a class="card" href="#" target="_blank">💬 Telegram</a>
-<a class="card" href="#" target="_blank">📊 DEX</a>
-</div>
-</section>
+    .section {
+      margin-bottom: 64px;
+    }
+    .section h2 {
+      text-align: center;
+      margin-bottom: 32px;
+      letter-spacing: 1px;
+    }
 
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
 
-<footer>
-<div>© $HAWKS – Meme culture only.</div>
-<div class="warn">Not financial advice. Entertainment purposes only.</div>
-</footer>
-</div>
+    .card {
+      background: linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.01));
+      border: 1px solid rgba(255,255,255,.1);
+      border-radius: 20px;
+      padding: 24px;
+      text-align: center;
+    }
+
+    .big { font-size: 32px; font-weight: 800; color: var(--hawk); }
+    .muted { color: var(--muted); font-size: 14px; }
+
+    footer {
+      margin-top: 80px;
+      text-align: center;
+      font-size: 12px;
+      color: var(--muted);
+    }
+    .warn { color: #ffd166; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo">$HAWKS</div>
+      <div class="nav">
+        <a href="#tokenomics">Tokenomics</a>
+        <a href="#roadmap">Roadmap</a>
+        <a href="#community">Community</a>
+      </div>
+    </header>
+
+    <section class="hero">
+      <h1>$HAWKS</h1>
+      <p>
+        The football meme token for chaos enjoyers.
+        No promises. No suits. Just rivalry, memes and community.
+      </p>
+      <div class="cta">
+        <a class="btn primary" href="#">BUY ON DEX</a>
+        <a class="btn" href="#">VIEW CONTRACT</a>
+        <a class="btn" href="#community">JOIN TELEGRAM</a>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <section id="tokenomics" class="section">
+      <h2>TOKENOMICS</h2>
+      <div class="grid">
+        <div class="card"><div class="big">1B</div><div class="muted">Total Supply</div></div>
+        <div class="card"><div class="big">0%</div><div class="muted">Tax</div></div>
+        <div class="card"><div class="big">FAIR</div><div class="muted">Launch</div></div>
+        <div class="card"><div class="big">LOCKED</div><div class="muted">Liquidity</div></div>
+      </div>
+    </section>
+
+    <section id="roadmap" class="section">
+      <h2>ROADMAP</h2>
+      <div class="grid">
+        <div class="card">Phase 1<br><span class="muted">Launch · Memes · Community</span></div>
+        <div class="card">Phase 2<br><span class="muted">Rivalry events · Polls</span></div>
+        <div class="card">Phase 3<br><span class="muted">Game-day chaos</span></div>
+      </div>
+    </section>
+
+    <section id="community" class="section">
+      <h2>COMMUNITY</h2>
+      <div class="grid">
+        <a class="card" href="#">🐦 X / Twitter</a>
+        <a class="card" href="#">💬 Telegram</a>
+        <a class="card" href="#">📊 DEX</a>
+      </div>
+    </section>
+
+    <footer>
+      <p class="warn">⚠️ We never DM first. Beware of scams.</p>
+      <p>Entertainment only. Not financial advice.</p>
+    </footer>
+  </div>
 </body>
 </html>
