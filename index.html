@@ -3,124 +3,186 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>$HAWKS – Meme War Starts Here</title>
-  <meta name="description" content="$HAWKS is a community-driven football meme token. Choose your side. Join the chaos." />
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&display=swap" rel="stylesheet">
+  <title>$HAWKS – Seattle Meme Token</title>
+  <meta name="description" content="$HAWKS is a clean, community-driven Seattle football meme token. Green energy only." />
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
   <style>
     :root {
-      --bg: #05080d;
-      --panel: #0b1220;
-      --hawk: #2db4ff;
-      --danger: #ff3b3b;
-      --text: #e6edf3;
-      --muted: #9aa4b2;
+      --bg: #050806;
+      --panel: #0b120d;
+      --green: #69BE28; /* Seahawks green */
+      --green-soft: rgba(105,190,40,.15);
+      --text: #e8f3ec;
+      --muted: #9fb3a6;
     }
+
     * { box-sizing: border-box; }
+
     body {
       margin: 0;
-      font-family: 'Orbitron', system-ui, sans-serif;
-      background: radial-gradient(1200px 600px at 50% -10%, #0f1b3a, transparent), var(--bg);
+      font-family: Inter, system-ui, sans-serif;
+      background: radial-gradient(1000px 500px at 50% -10%, rgba(105,190,40,.15), transparent), var(--bg);
       color: var(--text);
     }
+
     a { color: inherit; text-decoration: none; }
-    .wrap { max-width: 1100px; margin: 0 auto; padding: 24px; }
+
+    .wrap {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 32px 20px;
+    }
 
     header {
-      display: flex; justify-content: space-between; align-items: center;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 60px;
     }
-    .logo { font-weight: 800; letter-spacing: 2px; }
-    .nav a { margin-left: 16px; color: var(--muted); font-size: 14px; }
 
+    .logo {
+      font-weight: 800;
+      letter-spacing: 1px;
+      color: var(--green);
+    }
+
+    .nav a {
+      margin-left: 20px;
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    /* HERO */
     .hero {
       text-align: center;
-      margin-top: 80px;
+      margin-bottom: 120px;
     }
+
+    .hero img {
+      width: 120px;
+      margin-bottom: 24px;
+      filter: drop-shadow(0 0 20px rgba(105,190,40,.4));
+    }
+
     .hero h1 {
-      font-size: clamp(48px, 8vw, 96px);
-      margin: 0;
-      color: var(--hawk);
-      text-shadow: 0 0 40px rgba(45,180,255,.35);
+      font-size: clamp(52px, 9vw, 96px);
+      margin: 0 0 16px;
+      color: var(--green);
+      letter-spacing: 2px;
     }
+
     .hero p {
-      max-width: 720px;
-      margin: 24px auto;
+      max-width: 640px;
+      margin: 0 auto 32px;
       color: var(--muted);
       font-size: 18px;
     }
+
     .cta {
-      display: flex; justify-content: center; gap: 16px; flex-wrap: wrap;
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
     }
+
     .btn {
       padding: 14px 28px;
       border-radius: 999px;
-      font-weight: 700;
-      border: 1px solid rgba(255,255,255,.15);
+      border: 1px solid var(--green-soft);
       background: transparent;
-      cursor: pointer;
+      color: var(--text);
+      font-weight: 600;
     }
+
     .btn.primary {
-      background: linear-gradient(135deg, var(--hawk), #7fd3ff);
-      color: #020617;
+      background: var(--green);
+      color: #081006;
       border: none;
     }
 
-    .divider {
-      margin: 96px 0 48px;
-      height: 1px;
-      background: linear-gradient(to right, transparent, rgba(255,255,255,.2), transparent);
+    /* SECTIONS */
+    .section {
+      margin-bottom: 100px;
     }
 
-    .section {
-      margin-bottom: 64px;
-    }
     .section h2 {
       text-align: center;
-      margin-bottom: 32px;
-      letter-spacing: 1px;
+      margin-bottom: 40px;
+      letter-spacing: 2px;
+      color: var(--green);
     }
 
     .grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 20px;
+      gap: 24px;
     }
 
     .card {
       background: linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.01));
-      border: 1px solid rgba(255,255,255,.1);
-      border-radius: 20px;
-      padding: 24px;
+      border: 1px solid var(--green-soft);
+      border-radius: 18px;
+      padding: 28px;
       text-align: center;
     }
 
-    .big { font-size: 32px; font-weight: 800; color: var(--hawk); }
-    .muted { color: var(--muted); font-size: 14px; }
+    .big {
+      font-size: 34px;
+      font-weight: 800;
+      color: var(--green);
+    }
+
+    .muted {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    /* GALLERY */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 20px;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 16px;
+      border: 1px solid var(--green-soft);
+    }
 
     footer {
-      margin-top: 80px;
       text-align: center;
       font-size: 12px;
       color: var(--muted);
+      margin-top: 80px;
     }
-    .warn { color: #ffd166; }
+
+    .warn { color: #c6ff9a; }
   </style>
 </head>
 <body>
   <div class="wrap">
+
     <header>
       <div class="logo">$HAWKS</div>
       <div class="nav">
         <a href="#tokenomics">Tokenomics</a>
-        <a href="#roadmap">Roadmap</a>
+        <a href="#seattle">Seattle</a>
         <a href="#community">Community</a>
       </div>
     </header>
 
+    <!-- HERO -->
     <section class="hero">
+      <!-- Replace src with your own Seahawks-style logo if you want -->
+      <img src="https://upload.wikimedia.org/wikipedia/en/8/8e/Seattle_Seahawks_logo.svg" alt="Seahawks Logo">
       <h1>$HAWKS</h1>
       <p>
-        The football meme token for chaos enjoyers.
-        No promises. No suits. Just rivalry, memes and community.
+        Seattle energy on-chain. A clean football meme token
+        built for community, rivalry and green chaos.
       </p>
       <div class="cta">
         <a class="btn primary" href="#">BUY ON DEX</a>
@@ -129,8 +191,7 @@
       </div>
     </section>
 
-    <div class="divider"></div>
-
+    <!-- TOKENOMICS -->
     <section id="tokenomics" class="section">
       <h2>TOKENOMICS</h2>
       <div class="grid">
@@ -141,15 +202,17 @@
       </div>
     </section>
 
-    <section id="roadmap" class="section">
-      <h2>ROADMAP</h2>
-      <div class="grid">
-        <div class="card">Phase 1<br><span class="muted">Launch · Memes · Community</span></div>
-        <div class="card">Phase 2<br><span class="muted">Rivalry events · Polls</span></div>
-        <div class="card">Phase 3<br><span class="muted">Game-day chaos</span></div>
+    <!-- SEATTLE GALLERY -->
+    <section id="seattle" class="section">
+      <h2>SEATTLE VIBES</h2>
+      <div class="gallery">
+        <img src="https://images.unsplash.com/photo-1542224566-6e85f2e6772f" alt="Seattle">
+        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" alt="Stadium">
+        <img src="https://images.unsplash.com/photo-1508264165352-258a6c0a4c79" alt="Crowd">
       </div>
     </section>
 
+    <!-- COMMUNITY -->
     <section id="community" class="section">
       <h2>COMMUNITY</h2>
       <div class="grid">
@@ -163,6 +226,7 @@
       <p class="warn">⚠️ We never DM first. Beware of scams.</p>
       <p>Entertainment only. Not financial advice.</p>
     </footer>
+
   </div>
 </body>
 </html>
